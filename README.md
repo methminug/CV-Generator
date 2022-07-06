@@ -8,7 +8,7 @@ However, some may find it hard to work with the TeX type setting system used in 
 And, that's what this script tries to fix.
 
 ## Usage
-A user <b> edits the JSON files </b> in the ```sections``` folder that correspond to each section in the CV template. <br/>
+A user <b> edits the simple JSON files </b> in the ```sections``` folder that correspond to each section in the CV template. <br/>
 Here's an example from the experience.json file for the Work Experience section of the CV.
 ```
 {
