@@ -1,0 +1,25 @@
+{
+    "title":"Awards and Honors",
+    "sectionname":"cvhonors",
+    "tagname":"cvhonor",
+    "records":[
+        {
+            "award": "1st place",
+            "event": "An awesome competitive event",
+            "location": "Somewhere Cool",
+            "year": "2020"
+        },
+        {
+            "award": "Finalist",
+            "event": "Another awesome competitive event",
+            "location": "Somewhere",
+            "year": "2020"
+        },
+        {
+            "award": "2nd place",
+            "event": "A competitive event",
+            "location": "Some Place",
+            "year": "2018"
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "title":"Education",
+    "sectionname":"cventries",
+    "tagname":"cventry",
+    "records":[
+        {
+            "degree":"BSc(Hons) in Information Technology specializing in Software Engineering.",
+            "institution":"XYZ Institute of Higher Education",
+            "location": "Somewhere",
+            "dates":"Feb 2016 - Feb 2021",
+            "notable-acheivements":[
+                "Recipient of a full scholarship awarded for academic excellence."
+            ]
+        }
+    ]
+}

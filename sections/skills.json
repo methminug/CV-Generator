@@ -1,0 +1,19 @@
+{
+    "title":"Skills",
+    "sectionname":"cvskills",
+    "tagname":"cvskill",
+    "records":[
+        {
+            "category": "DevOps",
+            "skills": "AWS, Docker, Kubernetes, Jenkins"
+        },
+        {
+            "category": "Front-end",
+            "skills": "Flutter, React, Angular, Vue"
+        },
+        {
+            "category": "Back-end",
+            "skills": "Koa Express"
+        }
+    ]
+}

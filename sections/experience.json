@@ -1,0 +1,28 @@
+{
+    "title":"Work Experience",
+    "sectionname":"cventries",
+    "tagname":"cventry",
+    "records":[
+        {
+            "title":"Software Engineer",
+            "organization":"ABC Company",
+            "location":"Mountain View, CA",
+            "dates":"May 2020 - Present",
+            "tasks-done":[
+                "Lorem ipsum dolor sit amet.",
+                "Elementum sagittis vitae et leo duis ut diam."
+            ]
+        },
+        {
+            "title":"Intern - Software Development",
+            "organization":"XYZ Company",
+            "location":"Somewhere, SA",
+            "dates":"Jan 2018 - Apr 2020",
+            "tasks-done":[
+                "Purus faucibus ornare suspendisse sed nisi lacus sed viverra tellus.",
+                "Venenatis lectus magna fringilla urna porttitor.",
+                "Massa tincidunt dui ut ornare lectus sit amet est placerat."
+            ]
+        }
+    ]
+}

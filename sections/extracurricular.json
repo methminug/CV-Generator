@@ -1,0 +1,27 @@
+{
+    "title":"Extra Curricular Activities",
+    "sectionname":"cventries",
+    "tagname":"cventry",
+    "records":[
+        {
+            "role": "Board Member",
+            "organization": "Free and Open Source Community of XYZ",
+            "dates":"Feb 2018 - Feb 2020",
+            "location":"",
+            "notable-acheivements":[
+                "Tellus at urna condimentum mattis.",
+                "Ullamcorper sit amet risus nullam eget felis eget nunc."
+            ]
+        },
+        {
+            "role": "Development Team Member",
+            "organization": "Free and Open Source Community of XYZ",
+            "dates":"May 2016 - Jan 2018",
+            "location":"",
+            "notable-acheivements":[
+                "Sed sed risus pretium quam vulputate dignissim suspendisse in est.",
+                "Purus sit amet volutpat consequat mauris nunc congue nisi vitae."
+            ]
+        }
+    ]
+}
