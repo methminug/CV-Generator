@@ -12,4 +12,5 @@ COPY sections/ /sections/
 COPY configureCV.py /configureCV.py
 COPY createCV.py /createCV.py
 
-ENTRYPOINT [ "/bin/sh", "-c", "xelatex -output-directory=generatedpdf cv.tex"]
+ENTRYPOINT [ "python3","createCV.py" ]
+CMD [ "/bin/sh", "-c", "xelatex -output-directory=generatedpdf cv.tex"]
