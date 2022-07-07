@@ -1,5 +1,8 @@
 FROM ubuntu:20.04
-RUN apt-get -y update && apt-get install -y python3 texlive-latex-base texlive-fonts-recommended texlive-fonts-extra texlive-latex-extra
+RUN ln -snf /usr/share/zoneinfo/Etc/UTC /etc/localtime \
+    && echo "Etc/UTC" > /etc/timezone \
+    && apt-get update && apt-get upgrade -y \
+    && apt-get install -y python3 texlive-latex-base texlive-fonts-recommended texlive-latex-extra
 
 COPY sections/ /sections/
 COPY configureCV.py /configureCV.py
