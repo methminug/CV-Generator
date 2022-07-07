@@ -88,6 +88,6 @@ proc.communicate()
 
 retcode = proc.returncode
 if not retcode == 0:
-    os.unlink('cover.pdf')
+    os.unlink('cv.pdf')
     raise ValueError('Error {} executing command: {}'.format(
         retcode, ' '.join(cmd)))
