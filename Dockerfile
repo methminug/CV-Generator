@@ -1,9 +1,12 @@
-FROM ubuntu:20.04
+FROM ubuntu:latest
+
 RUN ln -snf /usr/share/zoneinfo/Etc/UTC /etc/localtime \
     && echo "Etc/UTC" > /etc/timezone \
     && apt-get update && apt-get upgrade -y \
     && apt-get install python3 texlive-latex-base texlive-xetex texlive-latex-extra texlive-fonts-recommended xzdec -y \
     && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /data
 
 COPY sections/ /sections/
 COPY configureCV.py /configureCV.py
