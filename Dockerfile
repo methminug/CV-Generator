@@ -10,4 +10,4 @@ COPY configureCV.py /configureCV.py
 COPY createCV.py /createCV.py
 
 CMD [ "python3","createCV.py" ]
-ENTRYPOINT [ "/bin/sh", "-c", "xelatex -output-directory=out resume.tex"]
+ENTRYPOINT [ "/bin/sh", "-c", "xelatex -output-directory=generatedpdf cv.tex"]
