@@ -13,4 +13,4 @@ COPY sections/ /sections/
 COPY configureCV.py /configureCV.py
 COPY createCV.py /createCV.py
 
-RUN /script.sh
+RUN chmod +x script.sh
