@@ -8,9 +8,9 @@ RUN ln -snf /usr/share/zoneinfo/Etc/UTC /etc/localtime \
 
 WORKDIR /data
 
+COPY script.sh /script.sh
 COPY sections/ /sections/
 COPY configureCV.py /configureCV.py
 COPY createCV.py /createCV.py
-COPY script.sh /script.sh
 
 RUN /script.sh
