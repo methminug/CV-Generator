@@ -38,10 +38,6 @@ def add_cv_configs():
     % \definecolor{text}{HTML}{333333}
     % \definecolor{graytext}{HTML}{5D5D5D}
     % \definecolor{lighttext}{HTML}{999999}
-
-    % Set false if you don't want to highlight section with awesome color
-    \setbool{acvSectionColorHighlight}{true}
-
     '''
 
     with open("cv.tex", 'w') as file:
