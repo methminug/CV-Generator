@@ -1,0 +1,27 @@
+name: Update CV
+
+on:
+  push:
+    branches: [ "master" ]
+
+jobs:
+
+  update_cv:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Generate CV
+      uses: ./
+    - name: Commit generated PDF
+      run: |
+        git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        git config --local user.name "github-actions[bot]"
+        git commit -m "CV updated via GH Actions" -a
+      shell: bash
+    - name: Push updates
+      if: steps.commit.outputs.push == 'true'
+      uses: ad-m/github-push-action@master
+      with:
+         github_token: ${{ secrets.GITHUB_TOKEN }}

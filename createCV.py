@@ -82,12 +82,12 @@ for section_file in cv_sections:
 with open('cv.tex', 'a') as f:
     f.write(r"\end{document}")
 
-# cmd = ['pdflatex', '-interaction', 'nonstopmode', 'cv.tex']
-# proc = subprocess.Popen(cmd, shell=True)
-# proc.communicate()
+cmd = ['pdflatex', '-interaction', 'nonstopmode', 'cv.tex']
+proc = subprocess.Popen(cmd, shell=True)
+proc.communicate()
 
-# retcode = proc.returncode
-# if not retcode == 0:
-#     os.unlink('cover.pdf')
-#     raise ValueError('Error {} executing command: {}'.format(
-#         retcode, ' '.join(cmd)))
+retcode = proc.returncode
+if not retcode == 0:
+    os.unlink('cover.pdf')
+    raise ValueError('Error {} executing command: {}'.format(
+        retcode, ' '.join(cmd)))

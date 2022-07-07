@@ -1,11 +1,8 @@
-FROM ubuntu:latest
+FROM ubuntu:20.04
+RUN apt-get -y update && apt-get install -y python3 texlive-latex-base texlive-fonts-recommended texlive-fonts-extra texlive-latex-extra
 
-RUN ln -snf /usr/share/zoneinfo/Etc/UTC /etc/localtime \
-    && echo "Etc/UTC" > /etc/timezone \
-    && apt-get update && apt-get upgrade -y \
-    && apt-get install texlive-latex-base texlive-xetex texlive-latex-extra texlive-fonts-recommended xzdec -y \
-    && rm -rf /var/lib/apt/lists/*
+COPY sections/ /sections/
+COPY configureCV.py /configureCV.py
+COPY createCV.py /createCV.py
 
-WORKDIR /data
-
-ENTRYPOINT [ "/bin/sh", "-c", "xelatex -output-directory=out resume.tex"]
+CMD [ "python3","createCV.py" ]

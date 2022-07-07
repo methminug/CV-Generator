@@ -1,0 +1,5 @@
+name: 'Generate CV'
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
