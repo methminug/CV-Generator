@@ -11,6 +11,6 @@ WORKDIR /data
 COPY sections/ /sections/
 COPY configureCV.py /configureCV.py
 COPY createCV.py /createCV.py
+COPY script.sh /script.sh
 
-ENTRYPOINT [ "python3","createCV.py"]
-CMD [ "/bin/sh", "-c", "xelatex -output-directory=generatedpdf cv.tex"]
+RUN /script.sh
