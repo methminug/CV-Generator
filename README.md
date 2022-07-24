@@ -1,5 +1,5 @@
 # CV-Generator 🖨️
-A python script that converts data in <b>JSON files to a .tex format</b> for a [LaTex CV template](https://github.com/posquit0/Awesome-CV), run automatically by a GitHub action that also converts the generated .tex file to a CV in PDF format when changes are pushed to the ```master``` branch.
+A python script that converts data in <b>JSON files to a .tex format</b> for a [LaTex CV template](https://github.com/posquit0/Awesome-CV), run automatically by a GitHub Actions workflow that also converts the generated .tex file to a CV in PDF format when changes are pushed to the ```master``` branch.
 
 ## But why? 🤔
 LaTex templates are great for creating well formatted documents. <br/>
